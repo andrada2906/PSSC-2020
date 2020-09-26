@@ -1,0 +1,3 @@
+Stack Overflow este o aplicație destinată programatorilor, unde aceștia își pot crea cont, pot posta întrebări(aceste întrebări pot fi votate) la care alți utilizatori pot răspunde(răspunsurile pot fi și ele votate ca fiind "folositoare" sau "nefolositoare").
+Pentru a fi mai ușor de catalogat, întrebările pot avea tags cu limbajul sau programul despre care utilizatorul are nelămuriri. 
+Aplicația are și o secțiune care oferă posibilitatea de a căuta și de a găsi un job.

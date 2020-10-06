@@ -1,0 +1,23 @@
+Mai jos am identificat evenimentele și contextele din domeniul aplicației StackOverflow.
+
+Evenimente:                                  
+ Autentificarea                                
+ Aplicarea la un job/căutarea unui job                             
+ Întrebare adăugată/editarea unei întrebări                       
+ Ștergerea unei întrebări                      
+ Răspuns adăugat/editarea răspunsului
+ Ștergerea răspunsului
+ Votarea unui răspuns
+ Votarea unei întrebări
+ Ranking(în funcție de voturi)
+ Subiect adăugat/subiect căutat
+
+Contexte:
+ Contextul întrebării
+ Contextul reputației(Ranking)
+ Contextul jobului
+ Contextul răspunsului
+ Contextul autentificării
+ Contextul votării
+ Contextul subiectelor
+ Contextul utilizatorului

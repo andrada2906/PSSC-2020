@@ -1,0 +1,47 @@
+Homework: define workflow from question context
+A user posts a new question, the question is validated and the text is analyzed via an ML, the result of
+the ML can either accept the question, reject it or propose it for manual review. The workflow finishes
+with New Question Published.
+
+	Bounded context: “Question context”
+		Workflow: “Add a new question”
+			->Triggered by: "Add question request received"
+                        ->Input: "Question form"(Title, Body, Tags)
+                        ->Other Inputs (question validation and the text is analyzed via ML)
+                        ->Output: "New question accepted and posted" event
+			->Side effects: User gets notification
+
+Workflows documentation:
+	Workflow: “Add a question”
+		Input: “Question form”
+		Output: “New Question accepted and posted” event or Rejected question or Manual review
+
+//step 1
+	Do validate question form
+	if question is rejected then
+		stop
+	if question need manual review then
+		return “Review question”
+//step 2
+	Send notification message
+//step 3
+	Return “New Question Published” event 
+
+Substep “Validate question form”
+	Input: “Unvalidated question form”
+	Output: “Validated question form”
+	Dependencies: question validation and text analysing via ML 
+
+Validate title content
+Validate body content
+Validate tag content
+If the result of the ML accepts the question
+	Return validated question form	
+	user gets confirmation message
+Else if the result of the ML proposes it for manual review
+	Return manual review
+Else 
+	return Validation error
+
+
+
